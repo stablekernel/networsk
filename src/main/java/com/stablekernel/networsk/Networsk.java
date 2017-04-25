@@ -1,7 +1,15 @@
 package com.stablekernel.networsk;
 
 public class Networsk {
-    public static final String TAG = "networks";
+    public static final String TAG = "networsk";
 
-    public static boolean DEBUG = false;
+    private static boolean DEBUG = false;
+
+    public static void setDebug(boolean enabled) {
+        DEBUG = enabled;
+    }
+
+    public static boolean isDebug() {
+        return DEBUG;
+    }
 }
